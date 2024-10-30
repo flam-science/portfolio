@@ -1,0 +1,2274 @@
+@charset "UTF-8";
+/* 
+Theme Name: yuzu design portfolio
+Description: WordPressオリジナルテーマ
+Version: 1.0
+Author: flam
+Author URI: https://flam.com
+*/
+.container__common {
+  width: 100%;
+  max-width: 1120px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .container__common {
+    width: 100%;
+    max-width: 375px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 360px) {
+  .container__common {
+    width: 100%;
+    max-width: 310px;
+    padding: 0 5px;
+    margin: 0 auto;
+  }
+}
+.container__single {
+  width: 100%;
+  max-width: 840px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .container__single {
+    width: 100%;
+    max-width: 375px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 360px) {
+  .container__single {
+    width: 100%;
+    max-width: 310px;
+    padding: 0 5px;
+    margin: 0 auto;
+  }
+}
+.container__footer {
+  width: 100%;
+  max-width: 1120px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .container__footer {
+    width: 100%;
+    max-width: 375px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 360px) {
+  .container__footer {
+    width: 100%;
+    max-width: 310px;
+    padding: 0 5px;
+    margin: 0 auto;
+  }
+}
+
+.section__title--ja {
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: capitalize;
+}
+.section__title--en {
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 10px;
+}
+
+.page__header {
+  position: relative;
+  top: -100px;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .page__header {
+    top: -60px;
+  }
+}
+.page__title--ja {
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 120px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 768px) {
+  .page__title--ja {
+    font-size: 80px;
+  }
+}
+.page__title--en {
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.category__list {
+  padding: 8px 28px;
+  background-color: #FFFFFF;
+  color: #0F2841;
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  .category__list {
+    padding: 4px 16px;
+    font-size: 12px;
+  }
+}
+
+.btn__view {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn__item {
+  color: #FFFFFF;
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 18px 70px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.btn__item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transition: 0.3s;
+  z-index: -1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+@media (any-hover: hover) {
+  .btn__item:hover::before {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    cursor: pointer;
+  }
+}
+
+.page__background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 240px;
+}
+@media screen and (max-width: 768px) {
+  .page__background {
+    height: 165px;
+  }
+}
+.page__background--color {
+  background-color: #0F2841;
+  padding: 0 0 100px 0;
+}
+
+.color__yellow {
+  color: #F2B707;
+}
+
+.sp__block {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .sp__block {
+    display: block;
+  }
+}
+
+.message__404 {
+  text-align: center;
+}
+
+.text__big {
+  text-transform: capitalize;
+}
+
+.btn__contact {
+  width: 250px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wpcf7-spinner {
+  display: none;
+}
+
+.wpcf7-response-output {
+  display: none;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+.link__text--single {
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 8px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+
+.header {
+  margin: 0 auto;
+  max-width: 1080px;
+  width: 100%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  transition: all 0.5s;
+}
+@media screen and (max-width: 960px) {
+  .header__logo {
+    height: 50px;
+    width: 100px;
+  }
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+  padding: 0 20px;
+}
+@media screen and (max-width: 960px) {
+  .header__list {
+    display: none;
+  }
+}
+.header__list--link {
+  color: #FFFFFF;
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 20px;
+  line-height: 100px;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+}
+.header__nav.open {
+  height: 100px;
+  border-bottom: 1px solid #FFFFFF;
+}
+@media screen and (max-width: 960px) {
+  .header__nav.open {
+    height: 50px;
+  }
+}
+.header__left {
+  padding-left: 20px;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.moving {
+  background-color: #0F2841;
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.fv {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.fv__movie {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+@media screen and (max-width: 960px) {
+  .fv__movie {
+    height: 100vh;
+    object-position: left;
+  }
+}
+.fv__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.fv__logo--image {
+  width: 451px;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .fv__logo--image {
+    width: 200px;
+    height: auto;
+  }
+}
+
+.works {
+  position: relative;
+  background-image: url(image/works/bg-works.webp);
+  padding: 120px 0 100px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* コンテンツがオーバーレイの上に来るように */
+}
+.works::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* 半透明の黒でオーバーレイを作成 */
+  z-index: 1; /* 背景画像の上に表示 */
+}
+.works > * {
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  .works {
+    padding: 100px 0;
+  }
+}
+.works__main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px 40px;
+  padding-top: 72px;
+}
+@media screen and (max-width: 960px) {
+  .works__main {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.works__main--contents {
+  width: 500px;
+  height: 500px;
+  border-radius: 40px;
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+@media screen and (max-width: 768px) {
+  .works__main--contents {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+  }
+}
+.works__main--thumbnail {
+  width: 500px;
+  height: 281px;
+  border-radius: 40px 40px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .works__main--thumbnail {
+    width: 300px;
+    height: 167px;
+    border-radius: 20px 20px 0 0;
+  }
+}
+.works__main--info {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 219px;
+}
+@media screen and (max-width: 768px) {
+  .works__main--info {
+    height: 131px;
+    padding: 10px;
+  }
+}
+.works__main--title {
+  padding-top: 18px;
+  color: #FFFFFF;
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .works__main--title {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+}
+.works__info--header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.works__info--footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.works__info--date {
+  color: #FFFFFF;
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .works__info--date {
+    font-size: 14px;
+  }
+}
+
+.skills {
+  position: relative;
+  background-image: url(image/skills/bg-skills.webp);
+  padding: 120px 0 100px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* コンテンツがオーバーレイの上に来るように */
+}
+.skills::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* 半透明の黒でオーバーレイを作成 */
+  z-index: 1; /* 背景画像の上に表示 */
+}
+.skills > * {
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  .skills {
+    padding: 100px 0;
+  }
+}
+
+.skill__set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 38px;
+  padding-top: 72px;
+}
+@media screen and (max-width: 960px) {
+  .skill__set {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.skill__set--list {
+  width: 330px;
+  height: 500px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.3);
+  padding: 18px;
+}
+@media screen and (max-width: 768px) {
+  .skill__set--list {
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+  }
+}
+.skill__set--header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.skill__set--middle {
+  padding-top: 18px;
+}
+@media screen and (max-width: 768px) {
+  .skill__set--middle {
+    padding-top: 10px;
+  }
+}
+.skill__set--footer {
+  padding-top: 18px;
+}
+.skill__set--text {
+  font-family: "Kosugi Maru", system-ui;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .skill__set--text {
+    font-size: 12px;
+  }
+}
+.skill__set--image {
+  width: 100%;
+  height: 165px;
+}
+.skill__set--design {
+  background-image: url(image/skills/design.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.skill__set--coding {
+  background-image: url(image/skills/coding.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.skill__set--seo {
+  background-image: url(image/skills/seo.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.skill__title--ja {
+  font-family: "Kosugi Maru", system-ui;
+  color: #FFFFFF;
+  font-size: 28px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .skill__title--ja {
+    font-size: 20px;
+  }
+}
+.skill__title--en {
+  font-family: "Kosugi Maru", system-ui;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about {
+  position: relative;
+  background-image: url(image/about/bg-about.webp);
+  padding: 120px 0 100px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* コンテンツがオーバーレイの上に来るように */
+}
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* 半透明の黒でオーバーレイを作成 */
+  z-index: 1; /* 背景画像の上に表示 */
+}
+.about > * {
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 100px 0;
+  }
+}
+.about__area {
+  padding-top: 72px;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+@media screen and (max-width: 768px) {
+  .about__area {
+    flex-direction: column;
+  }
+}
+.about__image {
+  background-image: url(image/about/about.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 330px;
+  height: 350px;
+  border-radius: 50% 50% 0 0;
+}
+.about__text {
+  font-family: "Kosugi Maru", system-ui;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+.about__right {
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.youtube {
+  padding: 120px 0 100px 0;
+  background-color: #0F2841;
+}
+@media screen and (max-width: 768px) {
+  .youtube {
+    padding: 100px 0;
+  }
+}
+.youtube__wrapper {
+  margin-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+@media screen and (max-width: 768px) {
+  .youtube__wrapper {
+    margin-top: 40px;
+    gap: 20px;
+  }
+}
+.youtube__contents {
+  width: 528px;
+  min-height: 450px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.3);
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .youtube__contents {
+    width: 300px;
+    min-height: 256px;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+}
+.youtube__contents--thumbnail {
+  width: 528px;
+  height: 297px;
+  border-radius: 40px 40px 0 0;
+}
+@media screen and (max-width: 768px) {
+  .youtube__contents--thumbnail {
+    width: 300px;
+    height: 169px;
+    border-radius: 20px 20px 0 0;
+  }
+}
+.youtube__contents--footer {
+  height: 153px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .youtube__contents--footer {
+    padding: 0 10px;
+  }
+}
+.youtube__contents--title {
+  color: #FFFFFF;
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .youtube__contents--title {
+    padding-top: 10px;
+    font-size: 16px;
+  }
+}
+.youtube__contents--date {
+  color: #FFFFFF;
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .youtube__contents--date {
+    font-size: 14px;
+  }
+}
+
+.btn__view--youtube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+@media screen and (max-width: 768px) {
+  .btn__view--youtube {
+    flex-direction: column;
+  }
+}
+
+.contact {
+  position: relative;
+  background-image: url(image/contact/bg-contact.webp);
+  padding: 120px 0 100px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* コンテンツがオーバーレイの上に来るように */
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* 半透明の黒でオーバーレイを作成 */
+  z-index: 1; /* 背景画像の上に表示 */
+}
+.contact > * {
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 100px 0;
+  }
+}
+.contact__message {
+  width: 100%;
+  margin-top: 68px;
+}
+.contact__message--text {
+  margin: 0 auto;
+  width: 550px;
+  font-family: "Kosugi Maru", system-ui;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .contact__message--text {
+    width: 300px;
+    font-size: 14px;
+  }
+}
+
+.footer {
+  padding: 20px 0;
+  background-color: #45788D;
+}
+.footer__df {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .footer__df {
+    height: 284px;
+  }
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .footer__top {
+    align-items: flex-start;
+  }
+}
+.footer__left {
+  width: 200px;
+}
+@media screen and (max-width: 768px) {
+  .footer__left {
+    width: 100px;
+  }
+}
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.footer__logo--image {
+  width: 200px;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .footer__logo--image {
+    width: 100px;
+  }
+}
+.footer__nav {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+@media screen and (max-width: 768px) {
+  .footer__nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.footer__nav--link {
+  font-family: "Kosugi Maru", system-ui;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .footer__nav--link {
+    font-size: 16px;
+  }
+}
+.footer__sns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+}
+@media screen and (max-width: 768px) {
+  .footer__sns {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__sns--image {
+    width: 18px;
+    height: auto;
+  }
+}
+.footer__copyright {
+  font-family: "Kosugi Maru", system-ui;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .footer__copyright {
+    font-size: 10px;
+  }
+}
+
+.page__background--works {
+  position: relative;
+  background-image: url(image/page/bg-works-page.webp);
+  /* コンテンツがオーバーレイの上に来るように */
+}
+.page__background--works::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* 半透明の黒でオーバーレイを作成 */
+  z-index: 1; /* 背景画像の上に表示 */
+}
+.page__background--works > * {
+  position: relative;
+  z-index: 2;
+}
+.works__category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+}
+@media screen and (max-width: 768px) {
+  .works__category {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.works__category--list {
+  width: 250px;
+  height: 60px;
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.works__category--item {
+  font-family: "Kosugi Maru", system-ui;
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+
+.page__background--youtube {
+  position: relative;
+  background-image: url(image/page/bg-youtube-page.webp);
+  /* コンテンツがオーバーレイの上に来るように */
+}
+.page__background--youtube::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* 半透明の黒でオーバーレイを作成 */
+  z-index: 1; /* 背景画像の上に表示 */
+}
+.page__background--youtube > * {
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  .page__title--youtube {
+    font-size: 60px;
+  }
+}
+
+.page__background--contact {
+  position: relative;
+  background-image: url(image/contact/bg-contact.webp);
+  /* コンテンツがオーバーレイの上に来るように */
+}
+.page__background--contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* 半透明の黒でオーバーレイを作成 */
+  z-index: 1; /* 背景画像の上に表示 */
+}
+.page__background--contact > * {
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 768px) {
+  .page__title--contact {
+    font-size: 60px;
+  }
+}
+
+.contact__form {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.contact__form--row {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+@media screen and (max-width: 1025px) {
+  .contact__form--row {
+    gap: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact__form--row {
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+  }
+}
+.contact__row--title {
+  font-family: "Kosugi Maru", system-ui;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  width: 200px;
+}
+@media screen and (max-width: 768px) {
+  .contact__row--title {
+    text-align: center;
+  }
+}
+.contact__row--last {
+  align-items: start;
+}
+.contact__message--page {
+  margin-top: -20px;
+}
+.contact__message--caution {
+  padding-top: 36px;
+}
+
+.thanks__message--big {
+  font-size: 28px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .thanks__message--big {
+    font-size: 24px;
+  }
+}
+.thanks__message--small {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 28px;
+}
+@media screen and (max-width: 768px) {
+  .thanks__message--small {
+    font-size: 14px;
+  }
+}
+
+.wpcf7-form {
+  margin-top: 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .wpcf7-form {
+    align-items: center;
+  }
+}
+
+.wpcf7-list-item {
+  margin: 0;
+}
+
+.contact__text {
+  width: 315px;
+}
+@media screen and (max-width: 768px) {
+  .contact__text {
+    width: 280px;
+  }
+}
+.contact__text--confirm {
+  padding: 10px;
+  width: 315px;
+  height: 32px;
+  border-radius: 4px;
+  font-family: "Kosugi Maru", system-ui;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .contact__text--confirm {
+    font-size: 12px;
+    width: 280px;
+  }
+}
+.contact__textarea--confirm {
+  padding: 10px;
+  width: 315px;
+  height: 200px;
+  border-radius: 4px;
+  font-family: "Kosugi Maru", system-ui;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .contact__textarea--confirm {
+    font-size: 12px;
+    width: 280px;
+  }
+}
+.contact__form--name {
+  padding: 10px;
+  width: 315px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-family: "Kosugi Maru", system-ui;
+  color: #0F2841;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .contact__form--name {
+    font-size: 12px;
+    width: 280px;
+  }
+}
+.contact__form--email {
+  padding: 10px;
+  width: 400px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-family: "Kosugi Maru", system-ui;
+  color: #0F2841;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .contact__form--email {
+    font-size: 12px;
+    width: 280px;
+  }
+}
+.contact__form--tel {
+  padding: 10px;
+  width: 315px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-family: "Kosugi Maru", system-ui;
+  color: #0F2841;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .contact__form--tel {
+    font-size: 12px;
+    width: 280px;
+  }
+}
+.contact__form--check {
+  padding: 0 10px;
+  width: 315px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-family: "Kosugi Maru", system-ui;
+  color: #0F2841;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .contact__form--check {
+    font-size: 12px;
+    width: 280px;
+  }
+}
+.contact__form--textarea {
+  padding: 10px;
+  width: 400px;
+  height: 200px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  font-family: "Kosugi Maru", system-ui;
+  color: #0F2841;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .contact__form--textarea {
+    font-size: 12px;
+    width: 280px;
+  }
+}
+
+.section__main--top {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .section__main--top {
+    width: 100%;
+    max-width: 280px;
+    height: 157px;
+  }
+}
+.section__main--middle {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+@media screen and (max-width: 768px) {
+  .section__main--middle {
+    padding-top: 20px;
+  }
+}
+.section__main--bottom {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .section__main--bottom {
+    padding-top: 65px;
+  }
+}
+
+.single__works--thumbnail {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .single__works--thumbnail {
+    width: 100%;
+    max-width: 280px;
+    height: 157px;
+    border-radius: 20px;
+  }
+}
+.single__works--category {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+@media screen and (max-width: 768px) {
+  .single__works--category {
+    gap: 8px;
+  }
+}
+.single__works--title {
+  font-family: "Kosugi Maru", system-ui;
+  color: #FFFFFF;
+  font-size: 32px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .single__works--title {
+    font-size: 18px;
+  }
+}
+
+.main__bottom--first {
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .main__bottom--first {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+.main__bottom--second {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .main__bottom--second {
+    font-size: 16px;
+  }
+}
+.main__bottom--youtube {
+  display: flex;
+  flex-direction: column;
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .main__bottom--youtube {
+    font-size: 16px;
+  }
+}
+
+.works__row {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .works__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.works__unit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.works__link--single {
+  height: 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.bottom__second--title {
+  font-size: 28px;
+  padding-bottom: 18px;
+}
+@media screen and (max-width: 768px) {
+  .bottom__second--title {
+    font-size: 20px;
+  }
+}
+
+.bottom__youtube--title {
+  font-size: 28px;
+  padding-bottom: 18px;
+}
+@media screen and (max-width: 768px) {
+  .bottom__youtube--title {
+    font-size: 20px;
+  }
+}
+
+/* フェードインのアニメーション */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* 下から上に移動 */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* アニメーションを適用するクラス */
+.isShow {
+  opacity: 1;
+  animation: fadeInUp 1s ease-out forwards; /* アニメーションを適用 */
+}
+
+.inView {
+  opacity: 0;
+  transition: opacity 0.3s ease; /* 通常時の透明度の遷移設定 */
+}
+
+.button__top--scroll {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 72px;
+  height: 72px;
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 5;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+@media screen and (max-width: 768px) {
+  .button__top--scroll {
+    bottom: 15px;
+    right: 15px;
+    width: 48px;
+    height: 48px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .button__top--scroll {
+    bottom: 15px;
+    right: 15px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.scroll__icon {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 768px) {
+  .scroll__icon {
+    font-size: 20px;
+  }
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (any-hover: hover) {
+  .hover:hover {
+    opacity: 0.6 !important; /* ホバー時の透明度 */
+    cursor: pointer;
+  }
+}
+
+.section__fv--news {
+  width: 375px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 36px 16px 18px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  position: fixed;
+  bottom: 50px;
+  right: 32px;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+@media screen and (max-width: 960px) {
+  .section__fv--news {
+    bottom: 50px;
+    left: 42px;
+    width: 250px;
+    border-radius: 20px;
+    padding: 24px 16px 18px 16px;
+  }
+}
+.section__fv--news.news__fadeIn--first {
+  opacity: 0;
+  transition: all 0.5s;
+}
+@media screen and (max-width: 768px) {
+  .section__fv--news.news__fadeIn--first {
+    transform: translateX(-100%);
+  }
+}
+@media screen and (max-width: 360px) {
+  .section__fv--news.news__fadeIn--first {
+    transform: translateX(-100%);
+  }
+}
+@media (any-hover: hover) {
+  .section__fv--news.news__fadeIn--first:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+  }
+}
+.section__fv--news.news__fadeIn--right {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 0.5s;
+  z-index: 3;
+}
+@media screen and (max-width: 768px) {
+  .section__fv--news.news__fadeIn--right {
+    transform: translateX(-7%);
+  }
+}
+@media screen and (max-width: 360px) {
+  .section__fv--news.news__fadeIn--right {
+    transform: translateX(-7%);
+  }
+}
+.section__fv--news.news__fadeOut--right {
+  opacity: 0;
+  transform: translate(100%, 0);
+  transition: all 0.5s;
+}
+@media screen and (max-width: 768px) {
+  .section__fv--news.news__fadeOut--right {
+    transform: translateX(-100%);
+  }
+}
+@media screen and (max-width: 360px) {
+  .section__fv--news.news__fadeOut--right {
+    transform: translateX(-100%);
+  }
+}
+
+.section__fvNews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fv__News--text {
+  font-family: "Kosugi Maru", system-ui;
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 960px) {
+  .fv__News--text {
+    font-size: 18px;
+  }
+}
+.fv__News--category {
+  font-family: "Kosugi Maru", system-ui;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  padding-top: 16px;
+}
+@media screen and (max-width: 960px) {
+  .fv__News--category {
+    font-size: 12px;
+  }
+}
+.fv__News--date {
+  font-family: "Kosugi Maru", system-ui;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  padding-top: 30px;
+  text-align: end;
+}
+@media screen and (max-width: 960px) {
+  .fv__News--date {
+    font-size: 16px;
+  }
+}
+
+.body-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -15em;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -30px;
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0.25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+.hamburger {
+  display: block;
+}
+.hamburger__toggle {
+  justify-content: center;
+  align-items: center;
+  height: 5px;
+  width: 40px;
+  border-radius: 40px;
+  background-color: #FFFFFF;
+  transition: all 0.5s;
+}
+@media screen and (max-width: 960px) {
+  .hamburger__toggle {
+    height: 3px;
+    width: 20px;
+  }
+}
+.hamburger__toggle:nth-child(1) {
+  position: absolute;
+  top: 25px;
+}
+@media screen and (max-width: 960px) {
+  .hamburger__toggle:nth-child(1) {
+    top: 12px;
+  }
+}
+.hamburger__toggle:nth-child(2) {
+  position: absolute;
+  top: 40px;
+}
+@media screen and (max-width: 960px) {
+  .hamburger__toggle:nth-child(2) {
+    top: 20px;
+  }
+}
+.hamburger__toggle:nth-child(3) {
+  position: absolute;
+  top: 55px;
+}
+@media screen and (max-width: 960px) {
+  .hamburger__toggle:nth-child(3) {
+    top: 28px;
+  }
+}
+.hamburger__area {
+  display: block;
+  position: fixed;
+  top: -300%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100px);
+  width: 100%;
+  max-width: 1080px;
+  height: 600px;
+  background-color: #0F2841;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: -1;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 8px #0F2841;
+}
+@media screen and (max-width: 1100px) {
+  .hamburger__area {
+    height: 100vh;
+    top: -100vh;
+  }
+}
+.hamburger__area.open {
+  top: 100%;
+  transform: translateX(-50%) translateY(-100px);
+  opacity: 1;
+}
+.hamburger__btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #0F2841;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 1000;
+  position: relative;
+}
+@media screen and (max-width: 960px) {
+  .hamburger__btn {
+    width: 50px;
+    height: 50px;
+  }
+}
+.hamburger__btn::after {
+  content: "menu";
+  display: block;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  text-align: center;
+  position: relative;
+  top: 25px;
+}
+@media screen and (max-width: 960px) {
+  .hamburger__btn::after {
+    font-size: 12px;
+    top: 14px;
+  }
+}
+.hamburger__btn.open {
+  background-color: #F2B707;
+}
+.hamburger__btn.open::after {
+  content: "closed";
+  position: relative;
+  top: 25px;
+}
+@media screen and (max-width: 960px) {
+  .hamburger__btn.open::after {
+    font-size: 12px;
+    top: 14px;
+  }
+}
+.hamburger__btn.open .hamburger__toggle {
+  justify-content: center;
+  align-items: center;
+  height: 5px;
+  width: 40px;
+  background-color: #FFFFFF;
+  transition: all 0.5s;
+}
+.hamburger__btn.open .hamburger__toggle:nth-child(1) {
+  transform: rotate(335deg);
+  width: 40px;
+  position: absolute;
+  top: 40px;
+}
+@media screen and (max-width: 960px) {
+  .hamburger__btn.open .hamburger__toggle:nth-child(1) {
+    width: 30px;
+    top: 15px;
+  }
+}
+.hamburger__btn.open .hamburger__toggle:nth-child(2) {
+  display: none;
+  margin: 0;
+}
+.hamburger__btn.open .hamburger__toggle:nth-child(3) {
+  transform: rotate(-335deg);
+  width: 40px;
+  position: absolute;
+  top: 40px;
+}
+@media screen and (max-width: 960px) {
+  .hamburger__btn.open .hamburger__toggle:nth-child(3) {
+    width: 30px;
+    top: 15px;
+  }
+}
+.hamburger__title {
+  padding-right: 10px;
+  transition: all 2s;
+  opacity: 1;
+}
+.hamburger__line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 1px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+.hamburger__line:nth-child(2) {
+  margin: 4px 0px;
+}
+.hamburger__main {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 15%;
+  top: 150px;
+}
+@media screen and (max-width: 1100px) {
+  .hamburger__main {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120px;
+  }
+}
+.hamburger__main--list {
+  display: flex;
+}
+@media screen and (max-width: 1100px) {
+  .hamburger__main--list {
+    flex-direction: column;
+  }
+}
+.hamburger__main--title {
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 1100px) {
+  .hamburger__main--title {
+    font-size: 16px;
+    padding-top: 11px;
+  }
+}
+.hamburger__main--contents {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 160px;
+  height: 180px;
+  border-right: 1px dashed #FFFFFF;
+  padding-left: 16px;
+}
+@media screen and (max-width: 1100px) {
+  .hamburger__main--contents {
+    border-right: none;
+    border-bottom: 1px dashed #FFFFFF;
+    width: 300px;
+    height: auto;
+    padding-left: 0;
+    gap: 11px;
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .hamburger__main--contents {
+    padding-bottom: 11px;
+  }
+}
+.hamburger__main--item {
+  display: flex;
+  gap: 14px;
+}
+@media screen and (max-width: 1100px) {
+  .hamburger__main--item {
+    gap: 6px;
+  }
+}
+.hamburger__icon--image {
+  height: 16px;
+}
+.hamburger__icon--text {
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 1100px) {
+  .hamburger__icon--text {
+    font-size: 12px;
+  }
+}
+.hamburger__sns--contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+  padding-left: 31px;
+}
+@media screen and (max-width: 1100px) {
+  .hamburger__sns--contents {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .hamburger__sns--contents {
+    padding-top: 11px;
+  }
+}
+.hamburger__news {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  width: 100%;
+  max-width: 800px;
+}
+@media screen and (max-width: 1100px) {
+  .hamburger__news {
+    display: none;
+  }
+}
+.hamburger__news--header {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #FFFFFF;
+  margin-top: 20px;
+}
+.hamburger__news--topic {
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+.hamburger__news--icon {
+  height: 18px;
+}
+.hamburger__news--title {
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+@media screen and (max-width: 1100px) {
+  .hamburger__works, .hamburger__youtube {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* ハンバーガーボタンにフォーカスが当たったときのスタイル（キーボード操作のみ） */
+.hamburger__btn:focus-visible {
+  outline: 2px solid #ff9800; /* アウトラインを表示（色や太さはお好みで変更可能） */
+  background-color: rgba(255, 152, 0, 0.1); /* フォーカス時の背景色 */
+}
+
+/* ハンバーガーメニュー内のリンクにフォーカスが当たったときのスタイル（キーボード操作のみ） */
+.hamburger__nav--link:focus-visible {
+  outline: 2px solid #ff9800; /* アウトラインの色 */
+  background-color: rgba(255, 152, 0, 0.1); /* フォーカス時の背景色 */
+  color: #333; /* テキストの色を変える場合 */
+}
+
+/* スムーズなフォーカス移動のためのトランジション */
+.hamburger__nav--link,
+.hamburger__btn {
+  transition: background-color 0.3s, outline 0.3s; /* 背景色やアウトラインの変化をアニメーション化 */
+}
+
+.breadcrumb {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+.breadcrumb__item {
+  text-decoration: none;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  white-space: nowrap; /* 折り返しを無効にし、横並びを保つ */
+}
+@media screen and (max-width: 1100px) {
+  .breadcrumb__item {
+    white-space: normal; /* 幅が狭い時に折り返しを有効にする */
+  }
+}
+@media screen and (max-width: 1025px) {
+  .breadcrumb__item {
+    white-space: normal; /* 幅が狭い時に折り返しを有効にする */
+  }
+}
+@media screen and (max-width: 768px) {
+  .breadcrumb__item {
+    white-space: normal; /* 幅が狭い時に折り返しを有効にする */
+  }
+}
+@media screen and (max-width: 360px) {
+  .breadcrumb__item {
+    white-space: normal; /* 幅が狭い時に折り返しを有効にする */
+  }
+}
+.breadcrumb__list {
+  display: flex;
+  gap: 8px 26px;
+}
+@media screen and (max-width: 1100px) {
+  .breadcrumb__list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .breadcrumb__list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .breadcrumb__list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 360px) {
+  .breadcrumb__list {
+    flex-wrap: wrap;
+  }
+}
+.breadcrumb__text {
+  font-family: "Kosugi Maru", system-ui;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1.6px;
+  color: #0F2841;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .breadcrumb__text {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .breadcrumb__text {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+}
+.breadcrumb__next {
+  position: relative;
+}
+.breadcrumb__next::before {
+  position: absolute;
+  top: 9px;
+  right: -18px;
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #0F2841;
+  display: block;
+  border-radius: 10px;
+  transform: rotate(45deg);
+}
+@media screen and (max-width: 768px) {
+  .breadcrumb__next::before {
+    width: 7px;
+    right: -14px;
+    top: 6px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .breadcrumb__next::before {
+    width: 7px;
+    right: -14px;
+    top: 6px;
+  }
+}
+.breadcrumb__next::after {
+  position: absolute;
+  top: 15px;
+  right: -18px;
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #0F2841;
+  display: block;
+  border-radius: 10px;
+  transform: rotate(-45deg);
+}
+@media screen and (max-width: 768px) {
+  .breadcrumb__next::after {
+    width: 7px;
+    right: -14px;
+    top: 10px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .breadcrumb__next::after {
+    width: 7px;
+    right: -14px;
+    top: 10px;
+  }
+}
+
+.pagination {
+  width: 100%;
+}
+.pagination__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .pagination__list {
+    gap: 10px;
+  }
+}
+
+.page-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-family: "Kosugi Maru", system-ui;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .page-numbers {
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.current {
+  width: 50px;
+  height: 50px;
+  font-family: "Kosugi Maru", system-ui;
+  background-color: #45788D;
+  color: #0F2841;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .current {
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.next {
+  font-family: "Kosugi Maru", system-ui;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .next {
+    font-size: 14px;
+  }
+}
+
+.youtube__slider {
+  margin-top: 80px;
+  display: flex;
+  width: 100%;
+  overflow: hidden; /* スライダーの外を隠す */
+}
+.youtube__slider--item {
+  width: 240px;
+  aspect-ratio: 16/9; /* 3:2のアスペクト比（240px × 160px） */
+  object-fit: cover; /* 画像を要素にフィットさせる */
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .youtube__slider--item {
+    width: 200px;
+    aspect-ratio: 16/9; /* 120px × 80px の比率を保つ */
+  }
+}/*# sourceMappingURL=style.css.map */

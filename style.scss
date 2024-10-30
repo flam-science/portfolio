@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* 
+Theme Name: yuzu design portfolio
+Description: WordPressオリジナルテーマ
+Version: 1.0
+Author: flam
+Author URI: https://flam.com
+*/
+
+// ----------------- base ----------------- 
+
+// container
+@use 'scss/base/container.scss';
+
+// font
+@use 'scss/base/font.scss';
+
+// title
+@use 'scss/base/title.scss';
+
+// color
+@use 'scss/base/color.scss';
+
+// common
+@use 'scss/base/common.scss';
+
+
+// ----------------- module ----------------- 
+
+// header
+@use 'scss/module/header.scss';
+
+// fv
+@use 'scss/module/fv.scss';
+
+// works-top
+@use 'scss/module/works-top.scss';
+
+// skills-top
+@use 'scss/module/skills-top.scss';
+
+// about-top
+@use 'scss/module/about-top.scss';
+
+// youtube-top
+@use 'scss/module/youtube-top.scss';
+
+// contact-top
+@use 'scss/module/contact-top.scss';
+
+// footer
+@use 'scss/module/footer.scss';
+
+// page-works
+@use 'scss/module/page-works.scss';
+
+// page-youtube
+@use 'scss/module/page-youtube.scss';
+
+// page-contact
+@use 'scss/module/page-contact.scss';
+
+// single-works
+@use 'scss/module/single-works.scss';
+
+
+// ----------------- mixin ----------------- 
+
+// responsive
+@use 'scss/mixin/responsive';
+
+// animate
+@use 'scss/mixin/animate.scss';
+
+// hamburger
+@use 'scss/mixin/hamburger.scss';
+
+// breadcrumbList
+@use 'scss/mixin/breadcrumbList.scss';
+
+// pageNation
+@use 'scss/mixin/pageNation.scss';
+
+// slider
+@use 'scss/mixin/slider.scss';
